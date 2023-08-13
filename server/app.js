@@ -40,34 +40,12 @@ app.use(cors());
  * The ServerResponse object 'res' represents the writable stream back to the client.
  */
 app.get('/store', (req, res) => {
-  res.json(data);
-  return data;
-  const facets = req.query.facets;
-  const searchText = req.query.searchText.toLowerCase();
-
-  const resultsFromSearchText = data.filter(
-    item => item.model.toLowerCase().indexOf(searchText) > -1
+  const searchTerm = req.query.searchTerm;
+  const filteredResults = data.filter(
+    item => item.name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1
   );
 
-  if (!facets) {
-    const dataWithPosition = resultsFromSearchText.map((item, index) => ({
-      ...item,
-      position: index
-    }));
-    res.json(dataWithPosition);
-    return;
-  }
-
-  const filteredResultsWithPosition = resultsFromSearchText
-    .filter(
-      item => facets.indexOf(item.brand) > -1 || facets.indexOf(item.type) > -1
-    )
-    .map((item, index) => ({
-      ...item,
-      position: index
-    }));
-
-  res.json(filteredResultsWithPosition);
+  res.json(filteredResults);
 });
 
 // Start the server

@@ -134,3 +134,7 @@
 [12/8/2023 -- 23:21]  Scripts ran on main.js
 [12/8/2023 -- 23:22]  Scripts ran on main.js
 [12/8/2023 -- 23:23]  Scripts ran on main.js
+[12/8/2023 -- 23:25]  restarted!
+[12/8/2023 -- 23:25]  restarted!
+[12/8/2023 -- 23:25]  Scripts ran on main.js
+[12/8/2023 -- 23:27]  restarted!

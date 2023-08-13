@@ -18,7 +18,7 @@ function Home({ searchTerm }) {
 
       try {
         const res = await fetch(
-          `http://localhost:3035/store?searchText=${searchTerm}`
+          `http://localhost:3035/store?searchTerm=${searchTerm}`
         );
         const json = await res.json();
         console.log('🚀 ~ file: home.js:57 ~ fetchData ~ json:', json);
