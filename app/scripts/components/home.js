@@ -4,54 +4,48 @@
  */
 import React, { useEffect, useState } from 'react';
 
-function getFacetsArray(checkedItems) {
-  return Object.entries(checkedItems)
-    .filter(([key, value]) => value) // only include items that are checked
-    .map(([key, value]) => `${encodeURIComponent(key)}`);
-}
-
 function Home({ searchTerm }) {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
   useEffect(() => {
     async function fetchData() {
-      // Convert checkedItems object to query string
-
       try {
         const res = await fetch(
           `http://localhost:3035/store?searchTerm=${searchTerm}`
         );
         const json = await res.json();
-        console.log('🚀 ~ file: home.js:57 ~ fetchData ~ json:', json);
         setData(json);
-      } catch (error) {}
+      } catch (error) {
+        console.error('Error: ', error);
+      }
     }
-
     fetchData();
   }, [searchTerm]);
 
+  if (data === null) {
+    return (
+      <div className='products-container'>
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
+
+  if (data.length === 0) {
+    return (
+      <div className='products-container'>
+        <h1>No Products Found</h1>
+      </div>
+    );
+  }
+
   return (
-    <div style={{ padding: 10 }}>
-      <p>About {data.length} results</p>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(3, 1fr)',
-          gap: '10px'
-        }}
-      >
+    <div className='products-container'>
+      <h1>{data.length} Products Found</h1>
+      <div className='grid-container'>
         {data.map(item => (
-          <div
-            key={item.id}
-            style={{
-              border: '1px solid black',
-              width: 200,
-              height: 200
-            }}
-          >
-            <p>
-              {item.name} {item.about}
-            </p>
-            <img style={{ maxHeight: 100 }} src={item.picture} />
+          <div className='grid-item' key={item.id}>
+            <h2> {item.name} </h2>
+            <img src={item.picture} />
+            <p>{item.about}</p>
           </div>
         ))}
       </div>

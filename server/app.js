@@ -20,7 +20,6 @@
 }
 */
 const data = require('./data');
-const http = require('http');
 const hostname = 'localhost';
 const port = 3035;
 const express = require('express');
