@@ -10,31 +10,15 @@ function getFacetsArray(checkedItems) {
     .map(([key, value]) => `${encodeURIComponent(key)}`);
 }
 
-function Home() {
+function Home({ searchTerm }) {
   const [data, setData] = useState([]);
-  const [searchText, setSearchText] = useState('');
-  const [checkedItems, setCheckedItems] = useState({
-    Samsung: false,
-    Apple: false,
-    Motorola: false,
-    Watch: false,
-    Tablet: false,
-    Phone: false
-  });
   useEffect(() => {
-    console.log(checkedItems);
     async function fetchData() {
       // Convert checkedItems object to query string
-      let facetsArray = getFacetsArray(checkedItems),
-        facetsUrl = '';
-
-      if (facetsArray.length > 0) {
-        facetsUrl = `facets=${facetsArray.join(',')}`;
-      }
 
       try {
         const res = await fetch(
-          `http://localhost:3035/store?searchText=${searchText}&${facetsUrl}`
+          `http://localhost:3035/store?searchText=${searchTerm}`
         );
         const json = await res.json();
         console.log('🚀 ~ file: home.js:57 ~ fetchData ~ json:', json);
@@ -43,14 +27,7 @@ function Home() {
     }
 
     fetchData();
-  }, [checkedItems, searchText]);
-
-  const handleChange = event => {
-    setCheckedItems({
-      ...checkedItems,
-      [event.target.name]: event.target.checked
-    });
-  };
+  }, [searchTerm]);
 
   return (
     <div style={{ padding: 10 }}>
@@ -72,7 +49,7 @@ function Home() {
             }}
           >
             <p>
-              {item.brand} {item.model}
+              {item.name} {item.about}
             </p>
             <img style={{ maxHeight: 100 }} src={item.picture} />
           </div>

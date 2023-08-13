@@ -12,7 +12,7 @@
  *
  * Firstly we need to import the React JS Library
  */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import Menu from './components/menu';
@@ -28,10 +28,16 @@ function App() {
    * @returns JSX
    * @memberof App
    */
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearchTerm = term => {
+    setSearchTerm(term);
+  };
+
   return (
     <div className='App'>
-      <Menu />
-      <Home />
+      <Menu handleSearchTerm={handleSearchTerm} />
+      <Home searchTerm={searchTerm} />
     </div>
   );
 }

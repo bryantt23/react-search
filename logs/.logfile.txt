@@ -66,3 +66,71 @@
 [11/1/2023 -- 15:30]  Mustache Templates ran on the HTML files
 [11/1/2023 -- 15:30]  Scripts ran on main.js
 [11/1/2023 -- 15:30]  Sass ran on files
+[12/8/2023 -- 22:44]  Info task started
+[12/8/2023 -- 22:44]  Mustache Templates ran on the HTML files
+[12/8/2023 -- 22:44]  Scripts ran on main.js
+[12/8/2023 -- 22:44]  Sass ran on files
+[12/8/2023 -- 22:46]  Scripts ran on main.js
+[12/8/2023 -- 22:46]  Scripts ran on main.js
+[12/8/2023 -- 22:48]  restarted!
+[12/8/2023 -- 22:49]  Scripts ran on main.js
+[12/8/2023 -- 22:49]  Scripts ran on main.js
+[12/8/2023 -- 22:49]  Scripts ran on main.js
+[12/8/2023 -- 22:51]  Scripts ran on main.js
+[12/8/2023 -- 22:52]  Info task started
+[12/8/2023 -- 22:52]  Mustache Templates ran on the HTML files
+[12/8/2023 -- 22:52]  Scripts ran on main.js
+[12/8/2023 -- 22:52]  Sass ran on files
+[12/8/2023 -- 22:53]  Scripts ran on main.js
+[12/8/2023 -- 22:54]  Info task started
+[12/8/2023 -- 22:54]  Mustache Templates ran on the HTML files
+[12/8/2023 -- 22:54]  Scripts ran on main.js
+[12/8/2023 -- 22:54]  Sass ran on files
+[12/8/2023 -- 22:55]  Scripts ran on main.js
+[12/8/2023 -- 22:57]  Scripts ran on main.js
+[12/8/2023 -- 22:57]  Scripts ran on main.js
+[12/8/2023 -- 22:57]  Scripts ran on main.js
+[12/8/2023 -- 23:1]  Info task started
+[12/8/2023 -- 23:1]  Mustache Templates ran on the HTML files
+[12/8/2023 -- 23:1]  Scripts ran on main.js
+[12/8/2023 -- 23:1]  Sass ran on files
+[12/8/2023 -- 23:2]  Scripts ran on main.js
+[12/8/2023 -- 23:2]  Scripts ran on main.js
+[12/8/2023 -- 23:3]  Scripts ran on main.js
+[12/8/2023 -- 23:3]  Scripts ran on main.js
+[12/8/2023 -- 23:3]  Scripts ran on main.js
+[12/8/2023 -- 23:4]  Scripts ran on main.js
+[12/8/2023 -- 23:4]  Scripts ran on main.js
+[12/8/2023 -- 23:6]  restarted!
+[12/8/2023 -- 23:6]  restarted!
+[12/8/2023 -- 23:6]  restarted!
+[12/8/2023 -- 23:6]  restarted!
+[12/8/2023 -- 23:7]  restarted!
+[12/8/2023 -- 23:8]  Scripts ran on main.js
+[12/8/2023 -- 23:8]  Scripts ran on main.js
+[12/8/2023 -- 23:9]  Scripts ran on main.js
+[12/8/2023 -- 23:9]  Scripts ran on main.js
+[12/8/2023 -- 23:9]  restarted!
+[12/8/2023 -- 23:9]  restarted!
+[12/8/2023 -- 23:10]  restarted!
+[12/8/2023 -- 23:10]  restarted!
+[12/8/2023 -- 23:10]  restarted!
+[12/8/2023 -- 23:10]  restarted!
+[12/8/2023 -- 23:10]  restarted!
+[12/8/2023 -- 23:12]  restarted!
+[12/8/2023 -- 23:12]  Scripts ran on main.js
+[12/8/2023 -- 23:13]  Scripts ran on main.js
+[12/8/2023 -- 23:15]  Scripts ran on main.js
+[12/8/2023 -- 23:15]  Scripts ran on main.js
+[12/8/2023 -- 23:15]  Scripts ran on main.js
+[12/8/2023 -- 23:16]  Scripts ran on main.js
+[12/8/2023 -- 23:17]  Scripts ran on main.js
+[12/8/2023 -- 23:18]  Scripts ran on main.js
+[12/8/2023 -- 23:19]  Scripts ran on main.js
+[12/8/2023 -- 23:20]  Scripts ran on main.js
+[12/8/2023 -- 23:20]  Scripts ran on main.js
+[12/8/2023 -- 23:21]  Scripts ran on main.js
+[12/8/2023 -- 23:21]  Scripts ran on main.js
+[12/8/2023 -- 23:21]  Scripts ran on main.js
+[12/8/2023 -- 23:22]  Scripts ran on main.js
+[12/8/2023 -- 23:23]  Scripts ran on main.js
